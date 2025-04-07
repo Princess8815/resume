@@ -1,10 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Test Page</title>
-    </head>
-    <body>
-        <h1>Test</h1>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kirstin Lathrop – Resume Cover Letter</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <script src="script/date_stamp.js" defer></script>
+</head>
+<body>
+
+  <!-- Sidebar (desktop) -->
+  <nav class="d-none d-md-flex flex-column sidebar">
+    <h2 class="text-center mt-4">Kirstin Lathrop</h2>
+    <ul class="nav flex-column text-center mt-4">
+      <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="./pages/about-me.html">About Me</a></li>
+      <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+      <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+      <li class="nav-item"><a class="nav-link" href="work.html">Work History</a></li>
+      <li class="nav-item"><a class="nav-link" href="certifications.html">Certifications</a></li>
+      <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+      <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Mobile Navbar -->
+  <nav class="navbar navbar-expand-md d-md-none navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Kirstin</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mobileNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/about-me.html">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="work.html">Work History</a></li>
+          <li class="nav-item"><a class="nav-link" href="certifications.html">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Generalized Cover Letter Content (default view) -->
+  <main class="content p-4 generalized-content">
+    <section>
+      <h1>Resume Home</h1>
+      <address>
+        Kirstin Lathrop<br>
+        2621 10th st south apt 101<br>
+        Wisconsin Rapids WI 54494<br>
+        <a href="mailto:transgirl8815@yahoo.com">transgirl8815@yahoo.com</a><br>
+        <a href="tel:+17154514514">(715) 451 4514</a><br>
+        <span id="today-date"></span>
+      </address>
+
+      <p>To Whom It May Concern,</p>
+
+      <p>I am writing to express my interest in a position where I can bring my dedication, reliability, and ability to adapt to a variety of tasks. I take pride in being dependable, detail-oriented, and a quick learner in any environment I step into.</p>
+
+      <p>Throughout my experiences, I have developed strong communication skills, the ability to work well independently and in teams, and a consistent drive to provide quality service and meaningful contributions. Whether engaging directly with clients or supporting internal teams, I strive to represent professionalism and integrity in everything I do.</p>
+
+      <p>I am excited to take on new challenges and contribute to an organization that values responsibility, collaboration, and growth. Thank you for considering my application.</p>
+
+      <p>Sincerely,<br>
+      Kirstin Lathrop</p>
+    </section>
+  </main>
+
+  <!-- Printable Version with Company-Specific Tags -->
+  <main class="content p-4 printable-content">
+    <section>
+      <h1>Cover Letter</h1>
+      <address>
+        Kirstin Lathrop<br>
+        2621 10th st south apt 101<br>
+        Wisconsin Rapids WI 54494<br>
+        <a href="mailto:transgirl8815@yahoo.com">transgirl8815@yahoo.com</a><br>
+        <a href="tel:+17154514514">(715) 451 4514</a><br>
+        <span id="today-date"></span>
+      </address>
+
+      <p><span class="recipient">[Hiring Manager Name or Hiring Manager]</span><br>
+      <span class="company-name">[Company Name]</span><br>
+      <span class="company-address">[Company Address]</span></p>
+
+      <p>Dear <span class="recipient">[Hiring Manager Name or Hiring Manager]</span>,</p>
+
+      <p>I am writing to express my interest in a position at <span class="company-name">[Company Name]</span> where I can contribute my dedication, reliability, and strong work ethic to your team. I am particularly impressed by <span class="company-name">[Company Name]</span>'s <span class="company-focus">[mention something specific about the company]</span>.</p>
+
+      <p>In my past experiences, I have worked in environments that required clear communication, adaptability, and customer-focused service. Notably, I <span class="achievement1">[mention achievement or task]</span> and <span class="achievement2">[mention another]</span>, demonstrating my ability to support operations and collaborate effectively.</p>
+
+      <p>I am eager to grow within a company like <span class="company-name">[Company Name]</span> that values teamwork, professionalism, and continuous improvement. I look forward to the opportunity to support your team and contribute to your ongoing success.</p>
+
+      <p>Thank you for your time and consideration. I welcome the chance to further discuss how I can be a valuable asset to your organization.</p>
+
+      <p>Sincerely,<br>
+      Kirstin Lathrop</p>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
+
+

@@ -1,0 +1,79 @@
+/* Layout */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9ff;
+    color: #333;
+  }
+  
+  .sidebar {
+    width: 240px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #ffcce6, #cce6ff); /* Pink to blue */
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    border-right: 2px solid #ddd;
+  }
+  
+  .sidebar .nav-link {
+    color: #333;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+  }
+  
+  .sidebar .nav-link.active,
+  .sidebar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+  }
+  
+  .content {
+    margin-left: 0;
+    padding-top: 80px;
+  }
+  
+  @media (min-width: 768px) {
+    .content {
+      margin-left: 240px;
+    }
+  }
+  
+  /* Highlight colors with contrast for readability */
+  h1, h2, h3 {
+    color: #cc3399; /* Classy pink */
+  }
+  
+  a {
+    color: #3399cc; /* Soft blue */
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Print styles */
+  @media print {
+    nav,
+    .sidebar,
+    .navbar,
+    .navbar-toggler,
+    .generalized-content {
+      display: none !important;
+    }
+  
+    .content {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .printable-content {
+      display: block !important;
+    }
+  }
+  
+  .printable-content {
+    display: none;
+  }
+  
