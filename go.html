@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Redirecting...</title>
     <script>
-      // Always add a random value to bust cache
-      const rand = Math.floor(Math.random() * 1000000);
-      window.location.href = `index.html?cb=${rand}`;
+      // Use a single redirect with cache-busting timestamp
+      const version = Date.now();
+      window.location.href = `index.html?v=${version}`;
     </script>
   </head>
   <body>
