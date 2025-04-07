@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
+    <script>
+      // Always add a random value to bust cache
+      const rand = Math.floor(Math.random() * 1000000);
+      window.location.href = `index.html?cb=${rand}`;
+    </script>
+  </head>
+  <body>
+    <p>Loading the latest version...</p>
+  </body>
+</html>
