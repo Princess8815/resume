@@ -8,10 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Redirecting...</title>
     <script>
-      // Use a single redirect with cache-busting timestamp
-      const version = Date.now();
-      window.location.href = `index.html?v=${version}`;
-    </script>
+        const version = new URLSearchParams(window.location.search).get("v") || Date.now();
+        window.location.href = `index.html?v=${version}`;
+      </script>
   </head>
   <body>
     <p>Loading the latest version...</p>
